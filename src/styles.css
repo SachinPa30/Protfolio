@@ -1,0 +1,168 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar-container {
+  background-color: black;
+  padding: 10px 0;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.navbar-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.navbar-container li {
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.navbar-container li:hover {
+  background-color: white;
+  box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+.navbar-container a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.navbar-container li:hover a {
+  color: black;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.hero-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* My Projects Section */
+.projects-section {
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+}
+
+.project-card {
+  border: 2px solid white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.project-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.project-description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.project-tech {
+  margin-top: 15px;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #2d2d2d;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tech-badge:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Contact Section */
+.contact-container {
+  width: 500px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.contact-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, black, #333);
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+}
