@@ -19,9 +19,12 @@ import { SignupFormDemo } from './SignupFormDemo';
 
 
 
+import React from 'react';
 
 
 function Home(){
+
+  
 
   const resume= ()=>{
 
@@ -41,6 +44,9 @@ function Home(){
 
   }
 
+  
+
+
 
 
 
@@ -50,7 +56,7 @@ function Home(){
     <div style={{backgroundColor:"black" }}>
 
       
-      <div style={{backgroundColor:"" , height:"40px", width:"350px", borderRadius:"20px", marginLeft:"600px"}}> <Navbar /></div>
+      <div style={{  height:"40px", width:"350px", borderRadius:"20px", marginLeft:"600px"}}> <Navbar /></div>
      
      <div style={{position:"relative"}}>
 <IconCloudDemo style={{position:"relative" , zIndex:1}}/>
@@ -93,7 +99,7 @@ function Home(){
    </div>
 
    <div className='row' style={{display:"flex" , paddingLeft:"8px", paddingTop:"15px"  , paddingRight:"8px"}}>
-   <div className='col-1'  style={{border:"2px solid black" , height:"130px" , width:"200px"  , backgroundColor: "green",}}><img src={img15} style={{height:"130px" , width:"200px" }} /></div>
+   <div className='col-1'  style={{border:"2px solid black" , height:"130px" , width:"200px"  , backgroundColor: "green",}}><img src={img15} style={{height:"130px" , width:"200px" }}  /></div>
     <div className='col-2' style={{border:"2px solid black" , height:"130px" , width:"200px", marginLeft:"12px" ,  backgroundColor: "lightblue", }}><img src={img14} style={{height:"130px" , width:"200px" }}   onClick={linkdinprofile}/></div>
    </div>
 
