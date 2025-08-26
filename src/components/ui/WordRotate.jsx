@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";  // Assuming you're usi
 
 import { cn } from "../../lib/utils"; // Ensure cn function exists or replace with appropriate function
 
-export default function WordRotate({
+ function WordRotate({
   words,
   duration = 2500,
   motionProps = {
@@ -40,4 +40,4 @@ export default function WordRotate({
       </AnimatePresence>
     </div>
   );
-}
+}export default WordRotate;
