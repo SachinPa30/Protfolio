@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "../../lib/utils";  // खात्री कर की utils.ts/js इथे आहे
+import { cn } from "../../lib/utils";
 
 function WordRotate({
   words,
@@ -17,9 +17,10 @@ function WordRotate({
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, duration);
+    const interval = setInterval(
+      () => setIndex((prev) => (prev + 1) % words.length),
+      duration
+    );
     return () => clearInterval(interval);
   }, [words, duration]);
 
