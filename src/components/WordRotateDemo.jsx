@@ -1,9 +1,12 @@
-import WordRotate from "../components/ui/WordRotate";
+import WordRotate from "./ui/WordRotate";
 
 export function WordRotateDemo() {
   return (
-    <div>
-      <WordRotate words={["Hello", "नमस्ते"]} />
+    <div className="text-center mt-10">
+      <WordRotate
+        words={["React Developer", "नमस्ते"]}
+        className="text-3xl font-bold text-blue-600"
+      />
     </div>
   );
 }
