@@ -1,4 +1,5 @@
-import WordRotate from "../components/ui/WordRotate";
+//import WordRotate from "../components/ui/WordRotate";
+import WordRotate from "../components/ui/wordrotate";
 
 export function WordRotateDemo() {
   return (
