@@ -1,11 +1,9 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { AnimatePresence, motion } from "framer-motion";  // Assuming you're using framer-motion instead of "motion/react"
+import { AnimatePresence, motion } from "framer-motion";
+import { cn } from "../../lib/utils";  // खात्री कर की utils.ts/js इथे आहे
 
-
-import { cn } from "../../lib/utils"; // Ensure cn function exists or replace with appropriate function
-
- function WordRotate({
+function WordRotate({
   words,
   duration = 2500,
   motionProps = {
@@ -22,8 +20,6 @@ import { cn } from "../../lib/utils"; // Ensure cn function exists or replace wi
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, duration);
-
-    // Clean up interval on unmount
     return () => clearInterval(interval);
   }, [words, duration]);
 
@@ -32,7 +28,7 @@ import { cn } from "../../lib/utils"; // Ensure cn function exists or replace wi
       <AnimatePresence mode="wait">
         <motion.h1
           key={words[index]}
-          className={cn(className)} // Ensure cn function works in JS or replace with appropriate logic
+          className={cn(className)}
           {...motionProps}
         >
           {words[index]}
@@ -40,4 +36,6 @@ import { cn } from "../../lib/utils"; // Ensure cn function exists or replace wi
       </AnimatePresence>
     </div>
   );
-}export default WordRotate;
+}
+
+export default WordRotate;
